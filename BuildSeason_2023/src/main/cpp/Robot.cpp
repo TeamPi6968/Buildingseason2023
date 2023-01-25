@@ -51,12 +51,49 @@ void Robot::TeleopInit() {
   if (m_autonomousCommand) {
     m_autonomousCommand->Cancel();
   }
+
+  // Read start value encoder
+  // Follow function Motor 2
+  // Inverse Motor 2
+
+
 }
 
 /**
  * This function is called periodically during operator control.
  */
-void Robot::TeleopPeriodic() {}
+void Robot::TeleopPeriodic() {
+  // Read current encoder value
+
+  switch (State_Outtake)
+  {
+    case 0:
+      // Read button controller
+      if(Button_outtake == true){
+        // activate cylinder for gripper
+        State_Outtake = 1;
+      }
+      break;
+
+    case 1:
+      // move to desired position motor
+      if(encoder_value == Desired_position){
+        // Deactivate cylinder for gripper
+        State_Outtake = 2;
+      }
+      break;
+
+    case 2:
+      // move to start position
+      if(encoder_value == Start_position){
+        State_Outtake = 0;
+      }
+      break;
+  
+    default:
+      break;
+  }
+}
 
 /**
  * This function is called periodically during test mode.
