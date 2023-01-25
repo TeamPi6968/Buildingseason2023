@@ -31,4 +31,9 @@ class Robot : public frc::TimedRobot {
   std::optional<frc2::CommandPtr> m_autonomousCommand;
 
   RobotContainer m_container;
+  int State_Outtake;
+  bool Button_outtake;
+  double encoder_value;
+  int Start_position;
+  int Desired_position;
 };
