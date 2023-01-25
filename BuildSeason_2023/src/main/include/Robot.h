@@ -36,4 +36,11 @@ class Robot : public frc::TimedRobot {
   double encoder_value;
   int Start_position;
   int Desired_position;
+  int Time; // type needs to change
+  int Delay; // Type maybe needs to change
+
+  /** 2 NEO brushless
+   *  1 NEO 550 for extention
+   *  1 cylinder
+   */
 };

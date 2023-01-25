@@ -78,13 +78,21 @@ void Robot::TeleopPeriodic() {
     case 1:
       // move to desired position motor
       if(encoder_value == Desired_position){
-        // Deactivate cylinder for gripper
+        // Read current time
         State_Outtake = 2;
       }
       break;
 
     case 2:
-      // move to start position
+      // Set extension
+      if(Time + Delay == true){
+        // Deactivate cylinder for gripper
+        State_Outtake = 3;
+      }
+      break;
+
+      case 3:
+      // Move to start position
       if(encoder_value == Start_position){
         State_Outtake = 0;
       }
