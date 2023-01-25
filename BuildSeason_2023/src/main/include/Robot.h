@@ -41,6 +41,6 @@ class Robot : public frc::TimedRobot {
 
   /** 2 NEO brushless
    *  1 NEO 550 for extention
-   *  1 cylinder
+   *  1 cylinder (Which solenoid?)
    */
 };
