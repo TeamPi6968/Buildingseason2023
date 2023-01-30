@@ -90,15 +90,18 @@ void Robot::TeleopPeriodic() {
       Motor_1.Set(speedLimiter_rotations * pid_1.Calculate(current_angle, target_angle));
       if(current_angle == target_angle){
         // Read current time
-        
+        time.Reset();
+        time.Start();
         State_Outtake = 2;
       }
       break;
 
     case 2:
+      // Read time
+      Time = time.Get();
       // Set extention
       Motor_Extension.Set(percent_speed);
-      if(Time + Delay == true){
+      if(Time > Delay){
         // Deactivate cylinder for gripper
         Solenoid.Set(frc::DoubleSolenoid::Value::kReverse);
         State_Outtake = 3;
@@ -108,7 +111,7 @@ void Robot::TeleopPeriodic() {
       case 3:
       // Move to start position
       Motor_1.Set(speedLimiter_rotations * pid_1.Calculate(current_angle, start_angle));
-      if(encoder_value == start_angle){
+      if(current_angle == start_angle){
         State_Outtake = 0;
       }
       break;
