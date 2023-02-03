@@ -1,12 +1,14 @@
 #ifndef INCLUDES_H
 #define INCLUDES_H
 
+// In this file all the includes will be written
+
 #pragma region General
 #include <frc/TimedRobot.h>
 #include <frc2/command/CommandPtr.h>
 
-#include "RobotContainer.h"
 #include "Robot.h"
+#include "RobotContainer.h"
 
 #pragma endregion
 
@@ -29,7 +31,10 @@
 #pragma endregion
 
 #pragma region Systems
-
+#include "Swerve.h"
+#include "Intake.h"
+#include "Indexer.h"
+#include "Outtake.h"
 #pragma endregion
 
 #endif
