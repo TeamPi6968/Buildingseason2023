@@ -6,15 +6,28 @@ Intake_Test::Intake_Test()
 {
 }
 
-void Intake_Test::actuate_cylinder(frc::DoubleSolenoid cylinder, bool actuate)
+void Intake_Test::control_cylinders_hold(bool button)
 {
-    if (actuate)
+    if (button)
     {
-        cylinder.Set(frc::DoubleSolenoid::Value::kForward);
+        CylinderLeft.Set(frc::DoubleSolenoid::Value::kForward);
+        CylinderRight.Set(frc::DoubleSolenoid::Value::kForward);
     }
     else
     {
-        cylinder.Set(frc::DoubleSolenoid::Value::kReverse);
+        CylinderLeft.Set(frc::DoubleSolenoid::Value::kReverse);
+        CylinderRight.Set(frc::DoubleSolenoid::Value::kReverse);
+    }
+}
+
+void Intake_Test::control_cylinders_toggle(bool button)
+{
+    frc::Debouncer debounce_button{125_ms};
+    
+    if (debounce_button.Calculate(button))
+    {
+       CylinderLeft.Toggle();
+       CylinderRight.Toggle();
     }
 }
 
