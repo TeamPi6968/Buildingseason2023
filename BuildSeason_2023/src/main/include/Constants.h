@@ -11,11 +11,19 @@
 #pragma endregion
 
 #pragma region Intake Variables
-static int leftCylinderForwardID = 0;
-static int leftCylinderReverseID = 1;
-static int RightCylinderForwardID = 2;
-static int RightCylinderReverseID = 3;
+static int leftIntakeCylinderForwardID = 0;
+static int leftIntakeCylinderReverseID = 1;
+static int rightIntakeCylinderForwardID = 2;
+static int rightIntakeCylinderReverseID = 3;
 #pragma endregion
+
+#pragma region Indexer Variables
+static int leftIndexerCylinderForwardID = 4;
+static int leftIndexerCylinderReverseID = 5;
+static int rightIndexerCylinderForwardID = 6;
+static int rightIndexerCylinderReverseID = 7;
+#pragma endregion
+
 
 /**
  * The Constants header provides a convenient place for teams to hold robot-wide

@@ -7,8 +7,8 @@
 class Intake_Test
 {
 private:
-    frc::DoubleSolenoid CylinderLeft{frc::PneumaticsModuleType::REVPH, leftCylinderForwardID, leftCylinderReverseID};
-    frc::DoubleSolenoid CylinderRight{frc::PneumaticsModuleType::REVPH, RightCylinderForwardID, RightCylinderReverseID};
+    frc::DoubleSolenoid CylinderLeft{frc::PneumaticsModuleType::REVPH, leftIntakeCylinderForwardID, leftIntakeCylinderReverseID};
+    frc::DoubleSolenoid CylinderRight{frc::PneumaticsModuleType::REVPH, rightIntakeCylinderForwardID, rightIntakeCylinderReverseID};
 
 public:
     // Functions and constructors definition
