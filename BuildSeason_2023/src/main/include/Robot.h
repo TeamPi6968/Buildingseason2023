@@ -8,7 +8,6 @@
 #include <frc/PS4Controller.h>
 
 #pragma region Forward class definitions
-class frc::PS4Controller;
 class Intake_Test;
 class Intake;
 class Indexer_Test;
