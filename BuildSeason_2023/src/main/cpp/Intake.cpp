@@ -22,7 +22,7 @@ void Intake_Test::control_cylinders_hold(bool button)
 
 void Intake_Test::control_cylinders_toggle(bool button)
 {
-    frc::Debouncer debounce_button{125_ms};
+    static frc::Debouncer debounce_button{125_ms};
     
     if (debounce_button.Calculate(button))
     {
