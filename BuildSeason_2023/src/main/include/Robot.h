@@ -5,8 +5,10 @@
 #define ROBOT_H
 
 #include "Includes.h"
+#include <frc/PS4Controller.h>
 
 #pragma region Forward class definitions
+class frc::PS4Controller;
 class Intake_Test;
 class Intake;
 class Indexer_Test;
@@ -33,15 +35,16 @@ public:
   void SimulationInit() override;
   void SimulationPeriodic() override;
 
-  Intake_Test *intake;
-  Intake *intake2;
+
 
 private:
   // Have it empty by default so that if testing teleop it
   // doesn't have undefined behavior and potentially crash.
   std::optional<frc2::CommandPtr> m_autonomousCommand;
-  // frc::XboxController *Joystick1 = new frc::XboxController(0);
+  frc::PS4Controller *Joystick1{0};
   RobotContainer *m_container;
+  Intake_Test *intake;
+  Intake *intake2;
 };
 
 #endif
