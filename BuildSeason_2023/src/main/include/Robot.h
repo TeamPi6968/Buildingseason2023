@@ -21,6 +21,8 @@ public:
   void SimulationInit() override;
   void SimulationPeriodic() override;
 
+Intake_Test intake;
+
 private:
   // Have it empty by default so that if testing teleop it
   // doesn't have undefined behavior and potentially crash.

@@ -9,12 +9,11 @@ class Intake_Test
 private:
     frc::DoubleSolenoid CylinderLeft{frc::PneumaticsModuleType::REVPH, leftCylinderForwardID, leftCylinderReverseID};
     frc::DoubleSolenoid CylinderRight{frc::PneumaticsModuleType::REVPH, RightCylinderForwardID, RightCylinderReverseID};
+    void actuate_cylinder(frc::DoubleSolenoid cylinder, bool actuate);
 
 public:
     // Functions and constructors definition
     Intake_Test();
-
-    void actuate_cylinder(frc::DoubleSolenoid cylinder, bool actuate);
 };
 
 // Teleop class, here will be added all the functions for the teleop and auto phase
