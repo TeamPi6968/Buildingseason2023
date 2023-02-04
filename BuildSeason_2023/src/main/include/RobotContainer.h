@@ -1,13 +1,12 @@
 // Copyright (c) FIRST and other WPILib contributors.
 // Open Source Software; you can modify and/or share it under the terms of
 // the WPILib BSD license file in the root directory of this project.
-
-#pragma once
+#ifndef ROBOTCONTAINER_H
+#define ROBOTCONTAINER_H
 
 #include <frc2/command/CommandPtr.h>
 #include <frc2/command/button/CommandXboxController.h>
 
-#include "Constants.h"
 #include "subsystems/ExampleSubsystem.h"
 #include "Includes.h"
 /**
@@ -33,3 +32,5 @@ class RobotContainer {
 
   void ConfigureBindings();
 };
+
+#endif
