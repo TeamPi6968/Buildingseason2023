@@ -16,6 +16,7 @@ public:
 
     void control_cylinders_hold(bool button); // actuating cylinder while button is pressed
     void control_cylinders_toggle(bool button); // toggle the states of the cylinder when button is pressed
+    void run(bool button);
 };
 
 // Teleop class, here will be added all the functions for the teleop and auto phase

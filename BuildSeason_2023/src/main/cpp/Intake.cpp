@@ -31,6 +31,14 @@ void Intake_Test::control_cylinders_toggle(bool button)
     }
 }
 
+void Intake_Test::run(bool button)
+{
+    control_cylinders_hold(button);
+    //control_cylinders_toggle(button);
+
+    //Add motor sequence
+}
+
 #pragma endregion
 
 #pragma region Intake functions
