@@ -37,4 +37,9 @@
 #include "Outtake.h"
 #pragma endregion
 
+#pragma region Controllers
+#include <frc/PS4Controller.h>
+#include <frc/XboxController.h>
+#pragma endregion
+
 #endif

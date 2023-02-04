@@ -4,6 +4,21 @@
 
 #pragma once
 
+#pragma region Pneumatics Variables
+const auto forward = frc::DoubleSolenoid::Value::kForward;//cylinder forward state
+const auto reverse = frc::DoubleSolenoid::Value::kReverse;//cylinder reverse state
+const auto revPneumatics= frc::PneumaticsModuleType::REVPH;//rev pneumatics control module
+const auto ctrePneumatics= frc::PneumaticsModuleType::CTREPCM;//rev pneumatics control module
+#pragma endregion
+
+
+#pragma region Intake Variables
+int leftCylinderForwardID= 0;
+int leftCylinderReverseID= 1;
+int RightCylinderForwardID= 2;
+int RightCylinderReverseID= 3;
+#pragma endregion
+
 /**
  * The Constants header provides a convenient place for teams to hold robot-wide
  * numerical or boolean constants.  This should not be used for any other
@@ -14,8 +29,9 @@
  * they are needed.
  */
 
-namespace OperatorConstants {
+namespace OperatorConstants
+{
 
-constexpr int kDriverControllerPort = 0;
+    constexpr int kDriverControllerPort = 0;
 
-}  // namespace OperatorConstants
+} // namespace OperatorConstants

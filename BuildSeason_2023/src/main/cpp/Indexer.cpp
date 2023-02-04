@@ -1,11 +1,13 @@
 #include "Indexer.h"
 
-#pragma region Indexer functions
-Indexer::Indexer() {}
+#pragma region Test Indexer functions
+Indexer_Test::Indexer_Test()
+{
+}
 #pragma endregion
 
-#pragma region Test Indexer functions
-Indexer_Test::Indexer_Test() : Indexer()
+#pragma region Indexer functions
+Indexer::Indexer() : Indexer_Test()
 {
 }
 #pragma endregion
