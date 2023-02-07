@@ -15,6 +15,10 @@ static int leftIntakeCylinderForwardID = 0;
 static int leftIntakeCylinderReverseID = 1;
 static int rightIntakeCylinderForwardID = 2;
 static int rightIntakeCylinderReverseID = 3;
+const int kJoystickPort = 0;
+const int kLeftMotorPort = 1;
+const int kRightMotorPort = 2;
+const int kSquareButton = 1;
 #pragma endregion
 
 #pragma region Indexer Variables

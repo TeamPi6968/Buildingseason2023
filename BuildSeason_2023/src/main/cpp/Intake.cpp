@@ -4,6 +4,8 @@
 
 Intake_Test::Intake_Test()
 {
+
+
 }
 
 void Intake_Test::control_cylinders_hold(bool button)
@@ -37,6 +39,16 @@ void Intake_Test::run(bool button)
     //control_cylinders_toggle(button);
 
     //Add motor sequence
+}
+
+
+void Intake_Test::motor_control(bool button)
+{
+  if (button){
+    leftMotor.Set(0.5);
+    rightMotor.Set(0.5);
+  }
+
 }
 
 #pragma endregion

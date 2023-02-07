@@ -9,7 +9,8 @@ class Intake_Test
 private:
     frc::DoubleSolenoid CylinderLeft{frc::PneumaticsModuleType::REVPH, leftIntakeCylinderForwardID, leftIntakeCylinderReverseID};
     frc::DoubleSolenoid CylinderRight{frc::PneumaticsModuleType::REVPH, rightIntakeCylinderForwardID, rightIntakeCylinderReverseID};
-
+    WPI_TalonSRX leftMotor{kLeftMotorPort};
+    WPI_TalonSRX rightMotor{kRightMotorPort};
 public:
     // Functions and constructors definition
     Intake_Test();
@@ -17,6 +18,8 @@ public:
     void control_cylinders_hold(bool button); // actuating cylinder while button is pressed
     void control_cylinders_toggle(bool button); // toggle the states of the cylinder when button is pressed
     void run(bool button);
+    void motor_control(bool button);
+    
 };
 
 // Teleop class, here will be added all the functions for the teleop and auto phase
