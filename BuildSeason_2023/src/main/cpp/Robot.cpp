@@ -63,6 +63,7 @@ void Robot::TeleopInit()
  */
 void Robot::TeleopPeriodic()
 {
+  intake->control_cylinders_hold(Joystick1->GetCircleButton());
 }
 
 /**

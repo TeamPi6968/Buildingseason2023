@@ -43,7 +43,6 @@ private:
   frc::PS4Controller *Joystick1{0};
   RobotContainer *m_container;
   Intake_Test *intake;
-  Intake *intake2;
 };
 
 #endif
