@@ -4,13 +4,7 @@
 
 #pragma once
 
-#include <frc/geometry/Rotation2d.h>
-#include <frc/kinematics/SwerveModulePosition.h>
-#include <frc/kinematics/SwerveModuleState.h>
-#include <rev/CANSparkMax.h>
-#include <rev/SparkMaxAbsoluteEncoder.h>
-#include <rev/SparkMaxPIDController.h>
-#include <rev/SparkMaxRelativeEncoder.h>
+#include "Includes.h"
 
 class MAXSwerveModule {
  public:
