@@ -8,8 +8,6 @@
 #include <frc2/command/CommandPtr.h>
 #include <optional>
 #include "Constants.h"
-#include "Robot.h"
-#include "RobotContainer.h"
 #pragma endregion
 
 #pragma region Motors
@@ -30,12 +28,6 @@
 
 #pragma endregion
 
-#pragma region Systems
-#include "Swerve.h"
-#include "Intake.h"
-#include "Indexer.h"
-#include "Outtake.h"
-#pragma endregion
 
 
 #endif

@@ -6,19 +6,10 @@
 
 #include "Includes.h"
 #include <frc/PS4Controller.h>
-
-#pragma region Forward class definitions
-class Intake_Test;
-class Intake;
-class Indexer_Test;
-class Indexer;
-class Outtake_Test;
-class Outtake;
-class Swerve;
-class Swerve_test;
-class RobotContainer;
-#pragma endregion
-
+#include "Intake.h"
+#include "Indexer.h"
+#include "Outtake.h"
+#include "RobotContainer.h"
 class Robot : public frc::TimedRobot
 {
 public:
