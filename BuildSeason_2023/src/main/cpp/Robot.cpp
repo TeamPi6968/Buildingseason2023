@@ -63,7 +63,7 @@ void Robot::TeleopInit()
  */
 void Robot::TeleopPeriodic()
 {
-  outtake2.init();
+  outtake2->init();
 }
 
 /**
@@ -71,7 +71,7 @@ void Robot::TeleopPeriodic()
  */
 void Robot::TestPeriodic()
 {
-  outtake2.periodic();
+  outtake2->periodic(Joystick1->GetSquareButton(), Joystick1->GetCircleButton());
 }
 
 /**

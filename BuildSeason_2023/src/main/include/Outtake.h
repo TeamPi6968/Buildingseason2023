@@ -12,8 +12,7 @@ public:
     // Functions and constructors definition
     Outtake_Test();
     void init();
-    void periodic();
-    frc::PS4Controller controller{0};
+    void periodic(bool button_L, bool button_R);
     rev::CANSparkMax main_lift_motor{12,rev::CANSparkMax::MotorType::kBrushless};
     rev::CANSparkMax follow_lift_motor{9,rev::CANSparkMax::MotorType::kBrushless};
 };
