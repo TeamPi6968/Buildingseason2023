@@ -44,6 +44,7 @@ private:
   RobotContainer *m_container;
   Intake_Test *intake;
   Intake *intake2;
+  Outtake_Test *outtake2;
 };
 
 #endif
