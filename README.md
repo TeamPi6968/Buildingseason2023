@@ -1,18 +1,18 @@
 # BuildSeason-2023
 This is the robot code for Phoenix.
 
-There are 3 different robot codes in this repository.
+There are 4 different robot codes in this repository.
 
-## Pre_Competition
+## V1 Pre_Competition
 This is the code what is written before the competition
 
-## Arizona_East_Regional
+## V2 Arizona_East_Regional
 The code made during our first regional
 
-## Arizona_West_Regional
+## V3 Arizona_West_Regional
 The code made during the second regional
 
-## After_Competition
+## V4 After_Competition
 The code made after building season
 This code is the most up to date version. With the most features.
 
